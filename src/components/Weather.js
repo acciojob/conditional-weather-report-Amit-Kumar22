@@ -1,5 +1,5 @@
 import React from 'react';
-import { darken, lighten } from 'polished';
+//import { darken, lighten } from 'polished';
 
 const Weather = ({ temperature, conditions }) => {
   // Define the temperature threshold
@@ -14,14 +14,15 @@ const Weather = ({ temperature, conditions }) => {
   };
 
   // Style object for the background color
-  const containerStyle = {
-    backgroundColor: temperature > threshold ? lighten(0.2, 'red') : lighten(0.2, 'blue'),
-    padding: '20px',
-    borderRadius: '8px',
-  };
+//   const containerStyle = {
+//     // backgroundColor: temperature > threshold ? lighten(0.2, 'red') : lighten(0.2, 'blue'),
+//     backgroundColor: "{textStyle}",
+//     padding: '20px',
+//     borderRadius: '8px',
+//   };
 
   return (
-    <div style={containerStyle}>
+    <div>
       <h2 style={textStyle}>Current Temperature: {temperature}°C</h2>
       <p>Conditions: {conditions}</p>
     </div>
