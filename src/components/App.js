@@ -3,7 +3,7 @@ import './../styles/App.css';
 
 const App = () => {
 
-  const weather = { temperature:18, conditions: "Sunny"};
+  const weather = { temperature:25, conditions: "Sunny"};
   const temperatureColor = weather.temperature > 20 ? 'red' : 'blue';
 
   return (
